@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akmal Ace</title>
+	<style>
+        body{
+            background-color: #393646;
+            color: white;
+			text-align: center; 
+            min-height: 100vh;
+            background-image: url("Image/part-time-work-large.jpg");
+            background-size: cover;
+		}
+		/* CSS styles for the navigation bar */
+		nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: #333;
+			overflow: hidden;
+			z-index: 2; /*to avoid nav bar from overlap*/
+			border: 2px solid;
+			border-color: #C9A7EB;
+		}
+		nav a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		nav a:hover {
+			background-color: #C9A7EB;
+			color: black;
+		}
+        nav #home-link {
+			background-color: #8F43EE; /* Red color for the Home link */
+		}
+		.footer {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		.left {
+			display: inline-block;
+			width: 200px;
+			margin-left: 50px;
+			font-size: 20px;
+		}
+		
+		.right {
+			display: inline-block;
+			text-align: right;
+			margin-right: 50px;
+		}
+        .container-3{
+            justify-content: center;
+            vertical-align: middle;
+        }
+        .container-3 button{
+            width: 200px;
+            height: 50px;
+            border-radius: 30px;
+            border: 4px solid #C9A7EB;
+        }
+        html, body{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #big-level{
+            background-color: #393646;
+            border-radius: 45px;
+            border: 4px solid #8F43EE;
+            width: 600px;
+            margin: auto;
+            opacity: 80%;
+        }
+	</style>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+	<!-- Navigation bar -->
+	<nav>
+		<a id="home-link" href="index.html#home">Home</a>
+		<a href="index.html#about">About</a>
+		<a href="index.html#gallery">My Gallery</a>
+		<a href="timetable.html">Time Table</a>
+		<a href="resume.html">Resume</a>
+		<a href="login.php" style="float:right">Buy Me Coffee</a>  
+	</nav>
+    <div id="big-level">
+        <div class="container-3" style="margin-top: 50px; margin-bottom: 50px;">
+            <div>
+                <img src="Image/employee-data.png" alt="resume-icon" width="150px" height="150px">
+                <h1>My Resume</h1>
+            </div>
+            <div>
+                <button onclick="window.open('resume-view.html', '_blank')">View Resume</button>
+                <button onclick="window.open('PDF/Resume of AkmalAce.pdf', '_blank')">Download Resume</button>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #8F43EE;">
+        <div class="footer">
+            <div class="left">
+                <p onclick="copyright()">© 2023 Akmal Ace</p>
+            </div>
+            <div class="right">
+                <a href="https://www.linkedin.com/in/muhammad-akmal-23a46a20b/">
+                    <img src="Image/linkedin-logo.png" alt="linkedin" width="3%" height="3%">
+                </a>
+                <a href="https://github.com/AceContish">
+                    <img src="Image/github.png" alt="github" width="3%" height="3%">
+                </a>
+                <a href="https://twitter.com/laxeace?t=cdanp2EJV2xDGR1eLZFQ8A&s=09">
+                    <img src="Image/twitter.png" alt="twitter" width="3%" height="3%">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

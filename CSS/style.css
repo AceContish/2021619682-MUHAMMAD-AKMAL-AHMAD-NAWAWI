@@ -1,0 +1,71 @@
+.akmal-pic{
+    border-radius: 60%;
+    margin-top: 100px;
+}
+.container-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-1 p{
+  width: 50%;
+  font-size: 16px;
+}
+
+.gallery-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 1em;
+}
+  
+.gallery-image {
+  position: relative;
+  width: 100%;
+}
+.gallery-image p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  text-align: center;
+}
+.gallery-image:hover img {
+  transform: scale(1.1);
+}
+  
+.gallery-image img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20%; /* aspect ratio of 4:3, adjust as needed */
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  margin: 10px;
+  border: 1px solid #C9A7EB;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+}
+.container-2 img, iframe {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.caption-2 {
+  font-size: 14px ;
+  color: white;
+  margin-top: 5px;
+}
+
+
+  
